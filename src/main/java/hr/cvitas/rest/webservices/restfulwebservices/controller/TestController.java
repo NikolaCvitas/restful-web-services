@@ -25,6 +25,8 @@ public class TestController {
     @GetMapping( path="/test/var/{name}")
     public TestBean variable(@PathVariable String name){
 
+        System.out.println("test/var ____________");
+
       //  throw new RuntimeException("Something went wrong");
         return new TestBean(String.format("Hello, %s", name));
     }
